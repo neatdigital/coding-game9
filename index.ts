@@ -50,10 +50,12 @@ Test 3
 //const s = 3;
 //const s = 1;
 const s = 18;
-for (let y = 0; y < s; y++) {
-  let line = '';
-  for (let x = 0; x < s; x++) {
-    line += '+';
+
+let line = '';
+for (let i = 0; i < s * s; i++) {
+  line += '+';
+  if ((i + 1) % s === 0) {
+    console.log(line);
+    line = '';
   }
-  console.log(line);
 }
