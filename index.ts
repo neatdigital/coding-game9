@@ -47,9 +47,9 @@ Test 3
 
 */
 
-//const s: number = 3;
-//const s: number = 1;
-const s: number = 18;
+//const s = 3;
+//const s = 1;
+const s = 18;
 const square: string[] = new Array(s * s);
 square.fill('+');
 let cursorY = 0;
