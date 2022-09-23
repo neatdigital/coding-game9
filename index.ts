@@ -50,15 +50,10 @@ Test 3
 //const s = 3;
 //const s = 1;
 const s = 18;
-const square: string[] = new Array(s * s);
-square.fill('+');
-let cursorY = 0;
 for (let y = 0; y < s; y++) {
   let line = '';
-  let cursorX = 0;
   for (let x = 0; x < s; x++) {
-    cursorX = x + cursorY;
-    line += square[cursorX];
+    line += '+';
   }
   console.log(line);
 }
